@@ -12,11 +12,12 @@ public class Prob{
     public static void Main(){
         // 方針
         //
+        var dif = "e";
         while(true){
             var s = rstr();
             if(s == "18") continue;
             string s1 = s.Trim();
-            WriteLine($"  [\"{s1}\",\"\",\"\",\"\"],");
+            WriteLine($"  [\"{s1}\",\"\",\"\",\"{dif}\",\"\"],");
         }
         
 	
