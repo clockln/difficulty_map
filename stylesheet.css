@@ -11,6 +11,7 @@ body{
     "BIZ UDPGothic",
     Meiryo,
     sans-serif;
+    position: relative;
 }
 
 img{
@@ -19,7 +20,8 @@ img{
   vertical-align: middle;
 }
 
-#header{
+#header_bar{
+  display: flex;
   position: fixed;
   margin-top: 0;
   border-bottom: 1px solid;
@@ -28,14 +30,32 @@ img{
   background-color: aliceblue;
 }
 
+#menu{
+  background: #0bd;
+  position: absolute;
+  z-index: 1;
+  top: 3.125rem;
+  right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 0;
+}
+
+div.menu_open{
+  width: 100%;
+}
+
+#menubutton_open{
+  width: 40px;
+  height: 100%;
+  font-size: 2em;
+  margin-top: 4px;
+}
+
 textarea{
   resize: none;
-  border-radius: 10px;
-  width: 98%;
-  height: 90%;
-  position: absolute;
-  top: 3%;
-  left: 1%;
+  width: calc(100% - 40px);
+  height: 95%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -73,4 +93,8 @@ textarea{
 }
 .MXM{
   border-color: azure;
+}
+
+.EXHQ,.INFQ,.GRVQ,.HVNQ,.VVDQ,.MXMQ{
+  border-color: black;
 }
