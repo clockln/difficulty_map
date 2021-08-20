@@ -20,6 +20,11 @@ img{
   vertical-align: middle;
 }
 
+p{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
 #header_bar{
   display: flex;
   position: fixed;
@@ -38,10 +43,10 @@ img{
   right: 0;
   overflow-x: hidden;
   text-align: center;
-  width: 0;
+  width: 0; 
 }
 
-div.menu_open{
+.menu_open{
   width: 100%;
 }
 
