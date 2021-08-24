@@ -3,10 +3,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
 
-  const testtt = "123456789";
-  const leng = testtt.length;
-  console.log(testtt[leng-1]);
-
   for(let i=9;i>=-1;i--){
     const newDiv = document.createElement('div')
     const addId = 'imgcontainer' + String(i)
