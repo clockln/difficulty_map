@@ -99,6 +99,9 @@ textarea{
 .MXM{
   border-color: azure;
 }
+.other{
+  border-color: black;
+}
 
 .EXHQ,.INFQ,.GRVQ,.HVNQ,.VVDQ,.MXMQ{
   border-color: black;
