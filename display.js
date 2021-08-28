@@ -473,5 +473,8 @@ window.addEventListener('DOMContentLoaded', () => {
     //  hoka
       ["Pure Ruby","","18.-1","06098m"],
       ["カジノファイヤーことみちゃん","か","18.-1","06104m"],
+      ["End of Guilty","","18.-1","000000m"],
+      ["Puni Puni Parade","","18.-1","000001m"],
+      ["ユメブキ","","18.-1","000002m"],
     ]
   
