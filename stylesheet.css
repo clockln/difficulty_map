@@ -108,3 +108,11 @@ textarea{
 .EXHQ,.INFQ,.GRVQ,.HVNQ,.VVDQ,.MXMQ{
   border-color: black;
 }
+
+.opa1{
+  opacity: 50%;
+}
+
+.opa2{
+  opacity: 20%;
+}
