@@ -72,16 +72,35 @@ window.onload = function(){
       const musicName = tempAlt[1]
       if(musicName == '') continue
       if(search_text == ""){
-        imgs[i].className = imgs[i].className.replace('Q','')
+        imgs[i].className = reReplaceTag(imgs[i].className)
       }else if(alt_text.toUpperCase().indexOf(search_text) > -1){
-        imgs[i].className = imgs[i].className.replace('EXHQ','EXH').replace('INFQ','INF').replace('GRVQ','GRV').replace('HVNQ','HVN').replace('VVDQ','VVD').replace('MXMQ','MXM')
+        imgs[i].className = reReplaceTag(imgs[i].className)
       }else{
-        imgs[i].className = imgs[i].className.replace('EXHQ','EXH').replace('INFQ','INF').replace('GRVQ','GRV').replace('HVNQ','HVN').replace('VVDQ','VVD').replace('MXMQ','MXM')
-        imgs[i].className = imgs[i].className.replace('EXH','EXHQ').replace('INF','INFQ').replace('GRV','GRVQ').replace('HVN','HVNQ').replace('VVD','VVDQ').replace('MXM','MXMQ')
+        imgs[i].className = replaceTag(imgs[i].className)
       }
     }
     
   })
+
+  function replaceTag(val){
+    let ret = val.replace('EXH','EXQ')
+    ret = val.replace('INF','INQ')
+    ret = val.replace('GRV','GRQ')
+    ret = val.replace('HVN','HVQ')
+    ret = val.replace('VVD','VVQ')
+    ret = val.replace('MXM','MXQ')
+    return ret
+  }
+
+  function reReplaceTag(val){
+    let ret = val.replace('EXQ','EXH')
+    ret = val.replace('INQ','INF')
+    ret = val.replace('GRQ','GRV')
+    ret = val.replace('HVQ','HVN')
+    ret = val.replace('VVQ','VVD')
+    ret = val.replace('MXQ','MXM')
+    return ret
+  }
     
     //----------------------------------------------------------------------
     }
